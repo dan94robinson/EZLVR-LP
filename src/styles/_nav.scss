@@ -1,0 +1,40 @@
+nav {
+  min-height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: rgb(80, 80, 80);
+  h1 {
+    font-size: 1.8rem;
+    color: rgb(80, 80, 80);
+  }
+  button {
+    background: rgb(241, 181, 188);
+    padding: 1rem;
+    transition: all 0.3s ease;
+    border-radius: 1rem;
+    color: rgb(80, 80, 80);
+    font-size: 0.9rem;
+    box-shadow: -6px -6px 10px rgb(245, 193, 199),
+      6px 6px 10px rgb(232, 156, 165);
+    outline: none;
+    border: 3px solid rgb(241, 181, 188);
+    cursor: pointer;
+    svg {
+      background-color: rgb(241, 181, 188);
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  nav {
+    button {
+      z-index: 15;
+      padding: 0.7rem;
+    }
+  }
+}
+.active-button {
+  box-shadow: -6px -6px 10px rgb(245, 193, 199), 6px 6px 10px rgb(232, 156, 165),
+    inset -6px -6px 10px rgb(245, 193, 199),
+    inset 6px 6px 10px rgb(232, 156, 165);
+}
